@@ -2,6 +2,7 @@ import express from "express";
 import projetos from "../routes/projetosRoutes.js";
 
 const routes = (app) => {
+    app.use(cors());
     app.route("/").get((req, res) => res.status(200).send("Hello World!"));
     app.use(express.json(), projetos)
 }

@@ -3,6 +3,7 @@ import conexaoComBancoDeDados from './config/dbConnect.js';
 import routes from './routes/index.js';
 
 const app = express();
+
 routes(app);
 
 
